@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNet", "AdoNet\AdoNet.csproj", "{AAC4CA93-A93D-488D-8DD1-65258F3F546E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1", "Lesson1\Lesson1.csproj", "{8CD7687C-70A8-463E-A195-1F77E2A615C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC4CA93-A93D-488D-8DD1-65258F3F546E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC4CA93-A93D-488D-8DD1-65258F3F546E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC4CA93-A93D-488D-8DD1-65258F3F546E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC4CA93-A93D-488D-8DD1-65258F3F546E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD7687C-70A8-463E-A195-1F77E2A615C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD7687C-70A8-463E-A195-1F77E2A615C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD7687C-70A8-463E-A195-1F77E2A615C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD7687C-70A8-463E-A195-1F77E2A615C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {909D1147-E17D-467B-8E79-A13116F3A898}
+	EndGlobalSection
+EndGlobal
