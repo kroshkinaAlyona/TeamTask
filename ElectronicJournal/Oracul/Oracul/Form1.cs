@@ -19,41 +19,36 @@ namespace Oracul
         TcpClient client;
         NetworkStream nstream;
         IPEndPoint endPoint;
+           
         public Form1()
         {
             InitializeComponent();
-
-            
-
-
+            endPoint = new IPEndPoint(IPAddress.Parse(textBox1.Text), Convert.ToInt32("1024"));
+            label3.Text = "Можешь задать вопрос";       
         }
 
-        void SendMessage(string message)
+        void SendMessage()
         {
             try
             {
-
-                endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), Convert.ToInt32("1024"));
-                label3.Text = "Можешь задать вопрос";
-                client = new TcpClient();
+                var client = new TcpClient();
                 client.Connect(endPoint);
-                nstream = client.GetStream();
+                var nstream = client.GetStream();
 
+                //byte[] barray = Encoding.Unicode.GetBytes("message");
+                //nstream.Flush();
+                //nstream.Write(barray, 0, barray.Length);
+                //MessageBox.Show("message");
 
-                byte[] barray = Encoding.ASCII.GetBytes(message);
-                nstream.Write(barray, 0, barray.Length);
-
-                StreamReader sr = new StreamReader(nstream, Encoding.ASCII);
+                StreamReader sr = new StreamReader(nstream, Encoding.Unicode);
                 string s = sr.ReadLine();
-                MessageBox.Show(s);
-                //textBox2.Text =  s;
-                
+                textBox2.Text =  s;
+                nstream.Close();
                 client.Close();
-
             }
-            catch (SocketException sockEx)
+            catch (SocketException exp)
             {
-                MessageBox.Show("Оракул не доступен, эфир затуманен");
+                MessageBox.Show("Оракул не доступен, эфир затуманен :" + exp.Message);
             }
             catch (Exception Ex)
             {
@@ -64,22 +59,15 @@ namespace Oracul
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            SendMessage(textBox1.Text);           
+            SendMessage();           
         }
-
-       
-
+     
         private void button1_Click(object sender, EventArgs e)
         {           
             button1.Visible = false;
             label3.Text = "Нажми на кристалл, чтобы установить связь с Оракулом";
 
-            SendMessage("EXIT");
-        }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            client.Close();
+            SendMessage();
         }
     }
 }
