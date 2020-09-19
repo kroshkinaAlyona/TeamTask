@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerOracul", "ServerOracul\ServerOracul.csproj", "{44120BE8-A957-4572-B50F-45DCB9F69501}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerMulticast", "ServerMulticast\ServerMulticast.csproj", "{2E0D4B2C-A8D0-4149-B866-D603666D7801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientOracul", "ClientOracul\ClientOracul.csproj", "{65CE7CFA-295E-4B75-B5CF-F69D12C90F2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientMulticast", "ClientMulticast\ClientMulticast.csproj", "{6CBDDB85-AE03-4AA0-9900-48F0175F0E6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{44120BE8-A957-4572-B50F-45DCB9F69501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44120BE8-A957-4572-B50F-45DCB9F69501}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44120BE8-A957-4572-B50F-45DCB9F69501}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44120BE8-A957-4572-B50F-45DCB9F69501}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65CE7CFA-295E-4B75-B5CF-F69D12C90F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65CE7CFA-295E-4B75-B5CF-F69D12C90F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65CE7CFA-295E-4B75-B5CF-F69D12C90F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65CE7CFA-295E-4B75-B5CF-F69D12C90F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0D4B2C-A8D0-4149-B866-D603666D7801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0D4B2C-A8D0-4149-B866-D603666D7801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0D4B2C-A8D0-4149-B866-D603666D7801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0D4B2C-A8D0-4149-B866-D603666D7801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBDDB85-AE03-4AA0-9900-48F0175F0E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBDDB85-AE03-4AA0-9900-48F0175F0E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBDDB85-AE03-4AA0-9900-48F0175F0E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBDDB85-AE03-4AA0-9900-48F0175F0E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
