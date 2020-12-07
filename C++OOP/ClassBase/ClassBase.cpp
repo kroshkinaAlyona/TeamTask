@@ -4,6 +4,7 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	String str;
+	String str2(str);
 }
 
