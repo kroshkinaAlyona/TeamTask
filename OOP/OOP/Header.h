@@ -13,9 +13,6 @@ public:
 
 class Employer
 {
-protected:
-	string firstName;
-	string secondName;
 public:
 	virtual void Print() = 0;
 };
