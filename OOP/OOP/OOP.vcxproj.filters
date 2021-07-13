@@ -18,9 +18,12 @@
     <ClCompile Include="OOP.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayTemp.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="ArrayTemp.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
