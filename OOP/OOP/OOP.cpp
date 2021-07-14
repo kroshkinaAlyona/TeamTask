@@ -1,40 +1,53 @@
 ﻿#include <iostream>
-#include "ArrayTemp.h"
-#include "ArrayTemp.cpp"
+//#include "ArrayTemp.h"
+//#include "ArrayTemp.cpp"
 
-using namespace my_namespace;
-using namespace test;
-//using namespace std;
+using namespace std;
 
-namespace test
+template<typename T>
+struct Node
 {
-    void Print() {};
+    T data;
+    Node<T>* next = NULL;
+    Node<T>* prev = NULL;
+};
+
+template<typename T>
+void AddNodeEnd(Node<T>*& head, Node<T>*& tail, T data)
+{
+    Node<T>* newNode = new Node<T>;
+    newNode->data = data;
+    
+    if (head == NULL)
+    {
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+    
+    newNode->prev = tail;
+    tail->next = newNode;
+    tail = newNode;
 }
 
+template<typename T>
+void ViewForvard(Node<T>* head)
+{
+    Node<T>* help = head;
+    while (help != NULL)
+    {
+        cout << help->data << "\t";
+        help = help->next;
+    }
+}
 
 int main()
-{
-    //using my_namespace::ArrayTemp;
-    
-    try
-    {
-        test::Print();
-        std::cout << 1 << endl;
-        //my_namespace::ArrayTemp<int> myMass(1);
-        ////cout << myMass;
-        //myMass.Insert(1, 0);       
-        //myMass.Insert(2, 1);
-        //myMass.Insert(3, 2);
-        //myMass.Insert(4, 3);
-        //cout << myMass;
-        //
-        //cout << myMass.Remove(2) << endl;
-        //cout << myMass;
-    }
-    catch (exception& exp)
-    {
-        cout << exp.what() << endl;
-    }
+{    
+    Node<int>* head = NULL;
+    Node<int>* tail = NULL;
+    for (int i = 0; i < 3; i++)
+        AddNodeEnd(head, tail, i);
 
+    ViewForvard(head);
 }
 

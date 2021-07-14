@@ -43,9 +43,3 @@ namespace my_namespace
 
 	void Print();
 }
-
-namespace
-
-
-
-
