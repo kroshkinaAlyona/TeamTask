@@ -1,17 +1,19 @@
 ﻿#include <iostream>
-//#include "ArrayTemp.h"
-//#include "ArrayTemp.cpp"
-#include "BinaryTree.h"
 
+#include "BST.h"
 using namespace std;
 
 
-
 int main()
-{    
-    node* root = new node{1, NULL, NULL};
-    BinaryTree tree(root);
+{   
+	BinarySearchTree tree;
+	tree.Add(8);
+	tree.Add(3);
+	tree.Add(10);
+	tree.Add(6);
+	tree.InOrder();
 
-    ViewForvard(head);
+	//tree.~BinarySearchTree();
+	//tree.InOrder();
 }
 

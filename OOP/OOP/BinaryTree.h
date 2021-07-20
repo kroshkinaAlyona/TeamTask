@@ -56,26 +56,4 @@ public:
 
 	void AddRight(int);
 	void AddLeft(int);
-
-    void PreOrder(node* root)
-    {
-        if (root == NULL) 
-            return;
-
-        cout << root->data << "\t";
-        PreOrder(root->left);
-        PreOrder(root->right);
-    }
-
-    void InOrder(node* root)
-    {
-        if (root == NULL)
-            return;
-
-        PreOrder(root->left);
-        cout << root->data << "\t";
-        
-        PreOrder(root->right);
-    }
-
 };
